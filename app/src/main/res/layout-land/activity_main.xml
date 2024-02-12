@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Left half of the screen - Course inputs -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- Labels and Text Fields for 5 Courses -->
+        <!-- Course 1 -->
+        <TextView
+            android:id="@+id/course1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 1 Grade:"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/course1GradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course1Label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter grade for Course 1"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <!-- Course 2 -->
+        <TextView
+            android:id="@+id/course2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 2 Grade:"
+            android:layout_below="@id/course1GradeEditText"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/course2GradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course2Label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter grade for Course 2"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <!-- Course 3 -->
+        <TextView
+            android:id="@+id/course3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 3 Grade:"
+            android:layout_below="@id/course2GradeEditText"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/course3GradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course3Label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter grade for Course 3"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <!-- Course 4 -->
+        <TextView
+            android:id="@+id/course4Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 4 Grade:"
+            android:layout_below="@id/course3GradeEditText"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/course4GradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course4Label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter grade for Course 4"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <!-- Course 5 -->
+        <TextView
+            android:id="@+id/course5Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 5 Grade:"
+            android:layout_below="@id/course4GradeEditText"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/course5GradeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course5Label"
+            android:layout_marginTop="8dp"
+            android:hint="Enter grade for Course 5"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+    <!-- Right half of the screen - Button and Result -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- Compute GPA Button -->
+        <Button
+            android:id="@+id/computeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compute GPA"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <!-- GPA Display TextView -->
+        <TextView
+            android:id="@+id/gpaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA: "
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_below="@id/computeButton"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
